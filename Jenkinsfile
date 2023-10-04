@@ -9,8 +9,7 @@ pipeline {
         }
       }
     }
-Please wait while Jenkins is getting ready to work ...
-
+    
     stage('run backend') {
       steps {
         echo 'executing gradel...'
@@ -20,6 +19,5 @@ Please wait while Jenkins is getting ready to work ...
       }
     }
   }
-    
-        
+            
 }
