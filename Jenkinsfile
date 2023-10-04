@@ -24,10 +24,12 @@ pipeline {
     }
 
     stage("test"){
-
+      when {
+        expression {
+          params.executeTest
+        }
       steps{
-        echo ' testing the application'
-      
+        echo ' testing the applirequestscation'
       }
     }
 
@@ -36,6 +38,7 @@ pipeline {
 
       steps{
         echo ' deploying the application'
+        echo "deployin version ${params.VERSION}" 
         echo "Deploying with ${SERVER_CREDENTIALS}"
         sh "${SERVER_CREDENTIALS}"
       }
