@@ -19,7 +19,7 @@ pipeline {
       steps{
         echo ' building the application'
         echo 'Scan periodically after every minute'
-        echo "building version ${NEW_VERSION}
+        echo "building version ${NEW_VERSION}"
       }
     }
 
